@@ -1,7 +1,6 @@
 package pageObject;
 
 import com.microsoft.playwright.Page;
-import test.BaseTest;
 
 public class BasePage {
 

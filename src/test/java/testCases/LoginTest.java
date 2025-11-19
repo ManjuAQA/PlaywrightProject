@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 import pageObject.LoginPage;
 import test.BaseTest;
 
-public class Login extends BaseTest {
+public class LoginTest extends BaseTest {
 
 
     @Test
@@ -14,4 +14,5 @@ public class Login extends BaseTest {
         loginPage.validLogin();
 
     }
+
 }

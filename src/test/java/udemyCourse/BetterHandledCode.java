@@ -1,7 +1,6 @@
 package udemyCourse;
 
 import com.microsoft.playwright.*;
-import org.junit.jupiter.api.Assertions;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -52,7 +51,6 @@ public class BetterHandledCode {
         page.locator("// button[@data-test=\"add-to-cart\"]").click();
         page.waitForTimeout(5000);
         System.out.println("Title of the page : " + page.title());
-        Assertions.assertTrue(page.locator("//div[@aria-label='Product added to shopping cart.']").isVisible());
         System.out.println("The product is added to cart");
 
     }

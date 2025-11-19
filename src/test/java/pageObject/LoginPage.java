@@ -2,7 +2,7 @@ package pageObject;
 
 import com.microsoft.playwright.Page;
 
-public class LoginPage extends BasePage{
+public class LoginPage extends BasePage {
     private final String usernameInput = "#email";
     private final String passwordInput = "#password";
     private final String loginButton = ".btnSubmit";
@@ -36,6 +36,7 @@ public class LoginPage extends BasePage{
         enterPassword("142434@Test");
         page.waitForTimeout(5000);
         clickLoginButton(loginButton);
+        page.waitForTimeout(5000);
 
     }
     public void navigateToLoginPage(){
